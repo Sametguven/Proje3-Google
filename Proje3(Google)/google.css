@@ -1,0 +1,192 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    /*overflow hidden :Eleman kutusundan taşan içerik kırpılır ve içeriğin geri kalan kısmı görünmez olur.*/
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ust {
+
+    float: right;
+    margin-right: 10px;
+    margin-top: 20px;
+
+}
+
+.ust a {
+    font-size: 14px;
+    color: black;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+.ust img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    /*üzerine gelince ok, el oluyor*/
+}
+
+.ust img:hover {
+    box-shadow: 0 1px 3px 3px rgba(201, 201, 201, 0.5);
+}
+
+.ust button {
+    background-color: #1a73e8;
+    border-radius: 6px;
+    color: #fff;
+    border: 2px solid;
+    padding: 9px 23px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-left: 8px;
+    margin-top: 0px;
+
+}
+
+.ust button:hover {
+    opacity: 0.9;
+}
+
+.section-1 {
+
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+
+    margin-bottom: 10px;
+
+}
+
+.box {
+    width: 585px;
+    margin: 0px auto;
+    position: relative;
+    /*Göreceli olarak konumlandırılmış bir öğe normal konumuna göre konumlandırılmıştır. */
+    margin-top: -8px;
+    text-align: center;
+    /* border: 1px solid; */
+}
+
+.input {
+    display: block;
+    /*elemanın yeni bir satırdan başlamasını sağlar*/
+    border: 1px solid #ddd;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 16px;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 85px;
+    border-radius: 25px;
+    width: 585px;
+    outline: none;
+}
+
+.ara {
+    width: 20px;
+    opacity: 0.4;
+    position: absolute;
+    /*Absolute :Kendisini kapsayan bir üst öğeye relative konumlanmışsa öğeye göre konum almaktadır. Böyle bir eleman bulunmazsa,
+     nesne web sayfasına göre konumlanacaktır.Burada box refereans alınarak ölçülendirildiler.*/
+    top: 13px;
+    left: 14px;
+}
+
+.ses {
+    width: 14px;
+    position: absolute;
+    top: 13px;
+    right: 24px;
+    cursor: pointer;
+}
+
+.harf {
+    position: absolute;
+    top: 13px;
+    right: 60px;
+    cursor: pointer;
+}
+
+.butonlar {
+    border: 1px solid transparent;
+    /*transparent çerçeve kalınlığını göstermez*/
+    padding: 9px 15px;
+    color: #666;
+    background-color: #F8F9FA;
+    font-size: 14px;
+    border-radius: 4px;
+    display: inline-block;
+    /*elemanın yeni bir satırdan başlamasını sağlar ve satırı ortalar*/
+    margin-right: 10px;
+    margin-top: 28px;
+    outline: none;
+    cursor: pointer;
+    /*üzerine gelince ok, el oluyor*/
+}
+
+.butonlar:hover {
+    border: 1px solid #aaa;
+}
+
+footer {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 100px;
+    bottom: 0px;
+    position: absolute;
+    /* position: fixed; */
+    /*Fixed: Sabitlenmiş bir eleman tarayıcı penceresine göre konumlandırılmıştır. Pencere kaydırılmış olsa bile hareket etmeyecektir.*/
+}
+
+h4 {
+    color: #70757a;
+    font-size: 15px;
+    line-height: 10px;
+    font-weight: 200;
+    padding: 15px 30px;
+}
+
+a {
+    display: inline-block;
+    padding: 15px;
+    color: #70757a;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.alt {
+    border-top: 1px solid #ddd;
+    display: flex;
+}
+
+.alt1 {
+    padding-left: 18px;
+    flex: 1;
+    /*alt1 alt2 arasındaki mesafeyi ayarladı*/
+}
+
+.alt2 {
+    padding-right: 18px;
+}
